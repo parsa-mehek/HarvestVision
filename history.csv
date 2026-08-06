@@ -1,0 +1,3 @@
+Date,Temperature,Humidity,Leaf_Color,Leaf_Spot,Leaf_Curl,Predicted_Disease,Model
+2026-08-06 22:03:39,25.0,60.0,Green,Yes,Yes,Rust,Logistic Regression
+2026-08-06 22:10:51,25.0,60.0,Green,Yes,Yes,Rust,Logistic Regression

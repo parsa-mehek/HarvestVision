@@ -1,0 +1,201 @@
+Temperature,Humidity,Leaf_Color,Leaf_Spot,Leaf_Curl,Disease
+23,41,Brown,No,Yes,Rust
+27,48,Brown,Yes,Yes,Rust
+38,67,Green,Yes,Yes,Early Blight
+26,54,Brown,Yes,Yes,Rust
+37,66,Green,No,No,Healthy
+20,88,Green,No,No,Healthy
+28,49,Green,No,Yes,Healthy
+22,64,Green,No,No,Healthy
+28,91,Green,No,Yes,Healthy
+32,45,Brown,No,No,Rust
+38,52,Brown,Yes,Yes,Rust
+27,89,Yellow,Yes,Yes,Leaf Spot
+23,64,Yellow,No,No,Powdery Mildew
+25,63,Yellow,Yes,No,Leaf Spot
+22,78,Brown,Yes,Yes,Rust
+25,69,Yellow,No,Yes,Early Blight
+30,93,Green,Yes,Yes,Early Blight
+30,65,Yellow,Yes,Yes,Leaf Spot
+38,85,Yellow,Yes,No,Leaf Spot
+32,81,Yellow,Yes,No,Leaf Spot
+24,55,Brown,No,No,Rust
+38,65,Yellow,Yes,Yes,Leaf Spot
+36,71,Green,Yes,Yes,Early Blight
+24,80,Green,No,Yes,Healthy
+32,64,Brown,No,No,Rust
+37,95,Green,Yes,No,Powdery Mildew
+30,47,Yellow,No,Yes,Early Blight
+34,40,Brown,No,Yes,Rust
+36,46,Brown,No,Yes,Rust
+24,63,Green,Yes,No,Powdery Mildew
+35,41,Green,No,No,Healthy
+27,43,Green,Yes,Yes,Early Blight
+35,92,Green,Yes,Yes,Early Blight
+35,75,Green,No,No,Healthy
+26,74,Brown,Yes,No,Rust
+32,82,Brown,No,No,Rust
+36,68,Green,Yes,Yes,Early Blight
+22,61,Green,Yes,Yes,Early Blight
+20,44,Brown,Yes,Yes,Rust
+22,42,Yellow,Yes,Yes,Leaf Spot
+28,82,Yellow,Yes,Yes,Leaf Spot
+38,76,Yellow,Yes,No,Leaf Spot
+33,52,Green,Yes,No,Powdery Mildew
+31,67,Yellow,No,Yes,Early Blight
+23,43,Yellow,No,Yes,Early Blight
+27,52,Green,No,Yes,Healthy
+33,51,Yellow,No,Yes,Early Blight
+22,68,Brown,Yes,Yes,Rust
+37,93,Green,Yes,Yes,Early Blight
+25,66,Yellow,No,Yes,Early Blight
+32,43,Green,No,Yes,Healthy
+32,56,Yellow,No,No,Powdery Mildew
+37,82,Brown,No,Yes,Rust
+26,58,Green,Yes,Yes,Early Blight
+30,43,Green,No,Yes,Healthy
+21,72,Green,Yes,Yes,Early Blight
+22,83,Green,No,Yes,Healthy
+38,55,Brown,Yes,Yes,Rust
+33,82,Brown,No,No,Rust
+26,82,Brown,No,Yes,Rust
+28,65,Green,No,No,Healthy
+30,88,Green,Yes,No,Powdery Mildew
+38,46,Green,Yes,No,Powdery Mildew
+24,62,Green,Yes,No,Powdery Mildew
+29,50,Yellow,No,Yes,Early Blight
+37,59,Brown,Yes,Yes,Rust
+28,47,Green,Yes,No,Powdery Mildew
+29,78,Green,No,Yes,Healthy
+28,72,Yellow,No,Yes,Early Blight
+22,80,Yellow,No,Yes,Early Blight
+20,61,Green,No,Yes,Healthy
+34,75,Brown,No,Yes,Rust
+23,44,Brown,Yes,Yes,Rust
+31,77,Brown,Yes,No,Rust
+24,42,Yellow,No,Yes,Early Blight
+31,53,Brown,Yes,Yes,Rust
+31,89,Brown,No,Yes,Rust
+27,95,Green,Yes,No,Powdery Mildew
+20,51,Brown,No,No,Rust
+27,57,Green,Yes,No,Powdery Mildew
+21,94,Yellow,Yes,Yes,Leaf Spot
+34,62,Yellow,Yes,Yes,Leaf Spot
+20,82,Green,No,No,Healthy
+28,95,Green,No,No,Healthy
+36,65,Brown,No,Yes,Rust
+23,56,Green,No,Yes,Healthy
+23,78,Yellow,No,No,Powdery Mildew
+33,78,Brown,Yes,No,Rust
+38,52,Yellow,Yes,No,Leaf Spot
+20,73,Brown,Yes,No,Rust
+33,44,Brown,No,No,Rust
+23,86,Yellow,No,No,Powdery Mildew
+30,65,Brown,No,Yes,Rust
+26,66,Brown,No,Yes,Rust
+38,59,Yellow,Yes,No,Leaf Spot
+29,53,Yellow,No,No,Powdery Mildew
+34,68,Brown,Yes,No,Rust
+25,82,Green,No,No,Healthy
+22,92,Green,No,Yes,Healthy
+26,49,Green,Yes,Yes,Early Blight
+35,79,Green,No,No,Healthy
+38,52,Brown,No,No,Rust
+32,55,Green,Yes,Yes,Early Blight
+33,54,Green,No,Yes,Healthy
+37,55,Green,No,Yes,Healthy
+34,82,Brown,No,No,Rust
+36,67,Brown,No,Yes,Rust
+35,68,Yellow,Yes,No,Leaf Spot
+36,71,Brown,Yes,No,Rust
+34,44,Brown,No,Yes,Rust
+28,61,Yellow,Yes,Yes,Leaf Spot
+24,54,Yellow,Yes,Yes,Leaf Spot
+22,66,Yellow,No,No,Powdery Mildew
+33,43,Green,No,No,Healthy
+38,84,Green,No,No,Healthy
+20,62,Yellow,No,No,Powdery Mildew
+37,87,Brown,Yes,No,Rust
+27,57,Yellow,No,Yes,Early Blight
+32,61,Brown,No,Yes,Rust
+34,48,Brown,Yes,No,Rust
+38,76,Brown,Yes,Yes,Rust
+33,48,Yellow,Yes,Yes,Leaf Spot
+28,64,Yellow,Yes,No,Leaf Spot
+30,61,Yellow,No,No,Powdery Mildew
+28,93,Green,No,Yes,Healthy
+37,43,Yellow,Yes,Yes,Leaf Spot
+21,88,Green,Yes,Yes,Early Blight
+20,79,Green,Yes,Yes,Early Blight
+35,82,Green,Yes,No,Powdery Mildew
+28,89,Yellow,Yes,Yes,Leaf Spot
+25,59,Green,Yes,No,Powdery Mildew
+38,83,Yellow,No,Yes,Early Blight
+22,77,Brown,Yes,Yes,Rust
+29,94,Brown,Yes,Yes,Rust
+31,74,Yellow,No,Yes,Early Blight
+36,81,Yellow,Yes,No,Leaf Spot
+35,46,Yellow,No,No,Powdery Mildew
+24,67,Green,No,No,Healthy
+34,67,Brown,No,No,Rust
+27,93,Green,No,No,Healthy
+27,88,Yellow,No,No,Powdery Mildew
+20,71,Yellow,Yes,No,Leaf Spot
+26,62,Yellow,No,No,Powdery Mildew
+28,75,Green,Yes,Yes,Early Blight
+27,86,Yellow,No,Yes,Early Blight
+35,81,Brown,No,No,Rust
+20,45,Yellow,Yes,No,Leaf Spot
+27,59,Brown,No,No,Rust
+37,73,Yellow,No,No,Powdery Mildew
+31,84,Yellow,No,No,Powdery Mildew
+28,54,Green,Yes,No,Powdery Mildew
+23,87,Brown,Yes,Yes,Rust
+26,87,Yellow,No,No,Powdery Mildew
+23,93,Green,No,Yes,Healthy
+31,51,Yellow,Yes,Yes,Leaf Spot
+28,42,Green,No,Yes,Healthy
+35,46,Green,No,No,Healthy
+35,68,Yellow,Yes,Yes,Leaf Spot
+28,95,Yellow,Yes,Yes,Leaf Spot
+32,71,Green,Yes,Yes,Early Blight
+24,91,Brown,No,Yes,Rust
+27,47,Brown,No,Yes,Rust
+36,64,Yellow,No,No,Powdery Mildew
+38,67,Yellow,Yes,Yes,Leaf Spot
+26,80,Green,No,Yes,Healthy
+25,55,Green,Yes,Yes,Early Blight
+20,66,Yellow,No,No,Powdery Mildew
+21,54,Yellow,No,No,Powdery Mildew
+22,83,Green,No,Yes,Healthy
+33,47,Brown,Yes,Yes,Rust
+28,92,Green,Yes,Yes,Early Blight
+25,90,Yellow,No,No,Powdery Mildew
+23,69,Brown,No,No,Rust
+28,72,Brown,No,No,Rust
+22,78,Green,No,No,Healthy
+28,41,Green,Yes,Yes,Early Blight
+28,76,Green,Yes,No,Powdery Mildew
+36,81,Yellow,No,Yes,Early Blight
+38,67,Brown,No,Yes,Rust
+35,62,Yellow,No,No,Powdery Mildew
+23,94,Green,No,No,Healthy
+35,58,Brown,No,Yes,Rust
+34,45,Yellow,No,No,Powdery Mildew
+23,89,Yellow,Yes,No,Leaf Spot
+33,43,Green,No,No,Healthy
+34,88,Green,Yes,No,Powdery Mildew
+37,48,Yellow,No,No,Powdery Mildew
+23,41,Brown,Yes,Yes,Rust
+29,75,Green,No,Yes,Healthy
+27,93,Green,No,Yes,Healthy
+24,71,Brown,No,No,Rust
+33,93,Yellow,No,Yes,Early Blight
+34,75,Green,No,Yes,Healthy
+36,87,Green,Yes,No,Powdery Mildew
+33,61,Brown,No,Yes,Rust
+29,86,Yellow,No,Yes,Early Blight
+34,74,Yellow,No,No,Powdery Mildew
+37,88,Brown,No,No,Rust
+30,95,Green,Yes,No,Powdery Mildew
+27,94,Yellow,Yes,No,Leaf Spot
