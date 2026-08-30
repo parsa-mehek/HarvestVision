@@ -19,7 +19,7 @@ def show_disease_detection():
     st.caption("Upload a leaf image and predict the disease")
 
     loader = DatasetLoader("datasets/crop_disease.csv")
-    X_train, X_test, y_train, y_test = loader.train_test_data()
+    X_train, _, y_train, _ = loader.train_test_data()
     preprocessor = loader.get_preprocessor()
 
     logistic_model = LogisticDiseaseModel()
@@ -40,21 +40,46 @@ def show_disease_detection():
 
     uploaded_file = st.file_uploader("Upload Leaf Image", type=["jpg", "jpeg", "png"])
 
+    detected_leaf_color = None
+    detected_leaf_spot = None
+    image = None
+
     if uploaded_file is not None:
         image = image_utils.load_image(uploaded_file)
         if image is not None:
             image = image_utils.resize_image(image)
             image_utils.display_image(image, caption="Uploaded Leaf Image")
+            detected_attributes = image_utils.detect_leaf_attributes(image)
+            detected_leaf_color = detected_attributes["Leaf_Color"]
+            detected_leaf_spot = detected_attributes["Leaf_Spot"]
+
+            st.caption(
+                f"Auto-detected Leaf Color: {detected_leaf_color} | Auto-detected Leaf Spot: {detected_leaf_spot}"
+            )
 
     temperature = st.number_input("Temperature", value=25.0)
     humidity = st.number_input("Humidity", value=60.0)
-    leaf_color = st.selectbox("Leaf Color", ["Green", "Yellow", "Brown", "Dark Green"])
-    leaf_spot = st.selectbox("Leaf Spot", ["Yes", "No"])
+    leaf_color_options = ["Green", "Yellow", "Brown"]
+    leaf_spot_options = ["Yes", "No"]
+
+    leaf_color_index = leaf_color_options.index(detected_leaf_color) if detected_leaf_color in leaf_color_options else 0
+    leaf_spot_index = leaf_spot_options.index(detected_leaf_spot) if detected_leaf_spot in leaf_spot_options else 1
+
+    leaf_color = st.selectbox(
+        "Leaf Color",
+        leaf_color_options,
+        index=leaf_color_index,
+    )
+    leaf_spot = st.selectbox(
+        "Leaf Spot",
+        leaf_spot_options,
+        index=leaf_spot_index,
+    )
     leaf_curl = st.selectbox("Leaf Curl", ["Yes", "No"])
     model_name = st.selectbox("Select Model", ["Logistic Regression", "KNN"])
 
     if st.button("Predict Disease"):
-        if uploaded_file is None:
+        if uploaded_file is None or image is None:
             st.warning("Please upload a leaf image first.")
             return
 

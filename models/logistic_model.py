@@ -1,10 +1,18 @@
 from sklearn.linear_model import LogisticRegression
+from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import accuracy_score
 
 
 class LogisticDiseaseModel:
     def __init__(self):
-        self.model = LogisticRegression(max_iter=1000, random_state=42)
+        self.model = OneVsRestClassifier(
+            LogisticRegression(
+                max_iter=1000,
+                random_state=42,
+                solver="liblinear",
+                C=0.5,
+            )
+        )
 
     def train(self, X_train, y_train):
         """

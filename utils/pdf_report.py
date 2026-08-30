@@ -1,14 +1,19 @@
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 import os
+from pathlib import Path
 
 
 class PDFReport:
     def __init__(self, output_folder="reports"):
-        self.output_folder = output_folder
+        folder_path = Path(output_folder)
+        if not folder_path.is_absolute():
+            folder_path = Path(__file__).resolve().parents[1] / folder_path
 
-        if not os.path.exists(output_folder):
-            os.makedirs(output_folder)
+        self.output_folder = str(folder_path)
+
+        if not os.path.exists(self.output_folder):
+            os.makedirs(self.output_folder)
 
     def generate_report(
         self,
@@ -32,7 +37,7 @@ class PDFReport:
 
         pdf = canvas.Canvas(pdf_path, pagesize=letter)
 
-        width, height = letter
+        _, height = letter
 
         y = height - 50
 

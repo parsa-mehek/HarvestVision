@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+from pathlib import Path
 
 from utils.history_manager import HistoryManager
 
@@ -54,7 +55,7 @@ def show_dashboard():
 
     st.subheader("Dataset Information")
 
-    dataset_path = "datasets/crop_disease.csv"
+    dataset_path = Path(__file__).resolve().parents[1] / "datasets" / "crop_disease.csv"
 
     if os.path.exists(dataset_path):
 

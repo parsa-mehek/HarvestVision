@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from pathlib import Path
 
 from utils.preprocessing import (
     HarvestPreprocessor,
@@ -9,7 +10,9 @@ from utils.preprocessing import (
 
 class DatasetLoader:
     def __init__(self, csv_path):
-        self.csv_path = csv_path
+        self.csv_path = Path(csv_path)
+        if not self.csv_path.is_absolute():
+            self.csv_path = Path(__file__).resolve().parents[1] / self.csv_path
         self.preprocessor = HarvestPreprocessor()
 
     def load_dataset(self):
@@ -24,8 +27,7 @@ class DatasetLoader:
         """
         df = self.load_dataset()
 
-        # Fit encoder
-        df = self.preprocessor.fit(df)
+        self.preprocessor.fit(df)
 
         # Split features & target
         X, y = split_features_target(df)

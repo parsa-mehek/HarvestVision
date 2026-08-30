@@ -1,10 +1,15 @@
 import os
 import pandas as pd
+from pathlib import Path
 
 
 class HistoryManager:
     def __init__(self, history_file="history.csv"):
-        self.history_file = history_file
+        history_path = Path(history_file)
+        if not history_path.is_absolute():
+            history_path = Path(__file__).resolve().parents[1] / history_path
+
+        self.history_file = str(history_path)
 
         if not os.path.exists(self.history_file):
             columns = [
